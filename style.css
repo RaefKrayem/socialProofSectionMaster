@@ -1,0 +1,220 @@
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --Spartan: 'Spartan', sans-serif;
+}
+
+/* Main styles */
+
+html {
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--Spartan);
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+body {
+    padding: 1rem;
+    background-color: var(--White);
+}
+
+
+/* main styles */ 
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-1 {
+    margin-bottom: 4rem;
+}
+
+
+/* heading styles */
+h1 {
+    padding: 1.5rem 4rem;
+    font-weight: 700;
+    color: var(--VeryDarkMagenta);
+}
+
+p {
+    font-weight: 400;
+}
+
+.p-1 {
+    color: var(--DarkGrayishMagenta);
+}
+
+
+/* rates styles */
+.rateBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.rate {
+    background-color: var(--LightGrayishMagenta);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.star {
+    padding-bottom: 1rem;
+}
+
+.p-rate {
+    font-weight: 500;
+}
+
+
+/* Feedback styles */
+
+.feedbackBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    color: var(--White);
+}
+
+.feedback {
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: left;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.profileName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7%;
+    padding: 0 0 1.5rem 0;
+}
+
+
+
+/* buyer styles */
+
+.buyer {
+    color: var(--SoftPink);
+}
+
+
+
+/* ------------------------------------------------------
+------------------------------------ Media Queries
+*/
+
+
+@media (min-width: 500px) and (max-width: 1440px) {
+
+
+    body {
+        padding: 6rem;
+    }
+
+    
+    /* main styles */
+
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2%;
+    }
+
+    
+
+
+    /* heading styles */
+    .header {
+        flex-basis: 43%;
+        height: 100%;
+        text-align: left;
+    }
+    h1 {
+        font-size: 3em;
+        padding: 1.5rem 0;
+        line-height: 4rem;
+    }
+
+
+    /* rates styles */
+    .rateBox {
+        flex-basis: 55%;
+    }
+
+    .rate {
+        padding: 1.2rem 4rem;
+        display: flex;
+        gap: 5%;
+        width: 90%;
+    }
+
+    .star {
+        padding-bottom: 0;
+    }
+
+    .rate-2 {
+        margin-left: 15%;
+    }
+
+    .rate-3 {
+        margin-left: 30%;
+    }
+
+    /* feedback styles */
+
+    .feedbackBox {
+        flex-direction: row;
+        gap: 2.5%;
+    }
+
+
+    .feedback-1 {
+        margin-bottom: 2rem;
+    }
+
+    .feedback-2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+
+    .feedback-3 {
+        margin-top: 2rem;
+    }
+
+}
+
+
+/* information styles */
+
+.attribution {
+    margin-top: 5%;
+}
